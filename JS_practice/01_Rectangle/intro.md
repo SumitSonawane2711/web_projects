@@ -1,0 +1,1 @@
+Create a rectangle. on which when mouse in center the rectangle also in center, when mouse moves towards left then rectangle also starts to move left but as mouse start moving left the speed of the rectangle will slow down.same happens with right side as well.

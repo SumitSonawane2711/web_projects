@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    color: black;
+    font-family: "fira Sans", sans-serif;
+    background-color: white;
+}
+
+nav{
+    background-color: #8cc099;
+    padding: 20px 6%;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    
+}
+
+nav .heading{
+    color: white;
+    font-size:30px ;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 8rem;
+}
+
+nav ul li{
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+nav ul li:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+nav ul li a:hover { 
+    color: white; 
+} 
+
+nav .sideMonuButton{
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive navbar css */
+
+@media screen and (max-width: 600px) { 
+    nav .sideMenuButton { 
+        display: flex; 
+    } 
+  
+    nav .navbar { 
+        display: none; 
+    } 
+  
+    .sideNavigationBar { 
+        display: block !important; 
+    } 
+} 
+
+.sideNavigationBar{
+    background-color: green;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    display: none;   
+}
+
+.sideNavigationBar a { 
+    padding: 8px 8px 8px 40px; 
+    display: block; 
+    font-size: 25px; 
+    font-weight: 500; 
+    color: #d1d1d1; 
+    transition: 0.3s; 
+    text-decoration: none; 
+}
+
+.sideNavigationBar a button { 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    color: rgb(11, 148, 68); 
+    font-size: 16px; 
+    border-style: none; 
+    font-weight: 700; 
+} 
+
+.sideNavigationBar a:hover { 
+    color: white; 
+} 
+  
+.sideNavigationBar .closeButton { 
+    position: absolute; 
+    top: 10px; 
+    right: 25px; 
+    font-size: 20px; 
+    margin-left: 50px; 
+} 
+
+.line { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 2% 5%; 
+} 
+
+.line .side1{
+    padding-right: 50px;
+}
+
+.line .side1 h1{
+    color: green;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.side1 button{
+    width: 200px;
+    padding: 12px 20px;
+    border-style: none;
+    border-radius: 20px;
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.side1 button:hover{
+    background-color: rgb(238, 231, 231);
+    font-size: 17.2px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+/* Header content responsive */
+@media screen and (max-width: 980px) { 
+    .side2 img { 
+        width: 350px; 
+    } 
+  
+    .side1 h1 { 
+        font-size: 40px; 
+    } 
+  
+    .side1 p { 
+        font-size: 17px; 
+    } 
+  
+    .line { 
+        margin-top: 80px; 
+    } 
+} 
+
+@media screen and (max-width: 600px) { 
+    .side1 h1 { 
+        font-size: 35px; 
+    } 
+  
+    .line { 
+        flex-direction: column; 
+    } 
+  
+    .line .side1 { 
+        padding: 30px; 
+    } 
+} 
+
+/* section */
+
+section .topic a {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about .boxes {
+    display: flex; 
+
+    justify-content: space-between;  
+}
+
+.about .boxes .box{
+    margin: 10px 20px; 
+    max-width: calc(100% / 3 - 50px); 
+    text-align: center; 
+    border-radius: 12px; 
+    padding: 30px 10px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12); 
+    cursor: default; 
+}
+
+/* Contact Page  */

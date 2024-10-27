@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!--Header section-->
+    <header>
+        <button class="hamburger" id="hamburger-icon">
+            <span onclick="openNavbar()">-</span>
+        </button>
+        <div class="logo">Your Logo</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Enquiry</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <button class="reach-me">Call us</button>        
+    </header>
+
+<!-- baner section -->
+
+    <section class="banner">
+        <img src="images.png" alt="welcome to our contact us page">
+        <h1>Get in touch with us</h1>
+        <p>We are here to answer any question that you may have.</p>
+    </section>
+
+<!--contact form-->
+
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="#" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="name">Message:</label>
+                <textarea name="message" id="message" rows="4" required> 
+                    </textarea>
+                <button type="submit" 
+                 class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+<!--company contact imfo-->
+
+    <section class="contact-info">
+        <h1>Contact Information</h1>
+        <address>
+            RMS pvt.lmt. <br>
+            243 Main street <br>
+            city state 023452 <br>
+            Phone <a href="tel:124567890">1234567890</a><br>
+            Mail <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+        </address>
+    </section>
+
+<!-- footer section -->
+
+    <footer>
+        <p>2023 company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
